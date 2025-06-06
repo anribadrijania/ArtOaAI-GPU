@@ -1,0 +1,6 @@
+remover_v1.pth
+maskrcnn_v2.pth
+pretrained
+.pytest_cache
+__pycache__
+.env
