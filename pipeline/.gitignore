@@ -1,4 +1,4 @@
-remover_v1.pth
+remover_v2_GPU.pth
 maskrcnn_v2.pth
 pretrained
 .pytest_cache

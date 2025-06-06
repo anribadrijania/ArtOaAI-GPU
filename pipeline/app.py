@@ -54,7 +54,7 @@ text_client = AsyncAzureOpenAI(
     api_version="2024-12-01-preview")
 
 remover_model = AutoModelForImageSegmentation.from_pretrained("./pretrained", trust_remote_code=True)
-remover_model.load_state_dict(torch.load("remover_v1.pth", map_location=device))
+remover_model.load_state_dict(torch.load("remover_v2_GPU.pth", map_location=device))
 torch.set_float32_matmul_precision(["highest"][0])
 remover_model.to(device).eval().half()
 
